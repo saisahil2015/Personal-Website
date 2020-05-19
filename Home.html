@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Travel Webpage for Tokyo">
+  <meta name="keywords" content="Travel,Tokyo,Package,Webpage">
+  <meta name="author" content="Sahil Raina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Create responsive pages for tablets and laptops using media-->
+<title> Home </title>
+<link rel = "stylesheet" href ="style.css">
+
+
+<style>
+
+
+/* Images used */
+.img1 { background-image: url("laptop.jpg"); }
+.img2 { background-image: url("person.jpg"); }
+.img3 { background-image: url("coffee.jpeg"); }
+.img4 { background-image: url("abstract.jpg"); }
+.img5 { background-image: url("bizz.jpg"); }
+.img6 { background-image: url("chicago.jpg"); }
+ 
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top"> &#8896 </button>
+
+<span style="font-size:30px;cursor:pointer; color: white" onclick="openNav()">&#9776;</span>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Goals.html">Goals</a>
+ 
+  </div>
+</div>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<div id = "first" class="bg-text">Sahil Raina</div>
+<div id = "second" class="bg-text"> A curios cat trying to explore the world of robotics, business, debating, and politics—to better the world</div>
+<div id = "third" class="bg-text">I have experience in Robotics as a mechanical team lead and programmer as I have worked on projects such as the robot's hand project, where we use the pulley system to control the movement of the robot's hand, 
+and have led a double rail elevator project that our team built, for the first time, in the FIRST robotics competition. </div>
+<div id = "fourth" class="bg-text"> I have even programmed in JAVA for the tank drive base, elevator, and the hatch-grabbers. Moreover, I have the basic skills of CAD to create 3D models.</div>
+<div id = "fifth" class="bg-text">  I am a Varsity Letter Honor in robotics, and the Co-founder and the
+ Product Research and Design Manager of my startup, WriteCase, which is a writable laptop case with the combination of a laptop and a notebook. </div>
+<div id = "sixth" class="bg-text"> I have even won many awards and competitions for my startup. Now, I am looking forward towards the future, trying to unleash my inner beast. 
+My best is yet to come! </div>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+<footer>&copy; Copyright 2019 Sahil Raina </footer>
+
+
+</body>
+</html>

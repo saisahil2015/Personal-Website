@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+  <meta name="description" content="Travel Webpage for Tokyo">
+  <meta name="keywords" content="Travel,Tokyo,Package,Webpage">
+  <meta name="author" content="Sahil Raina">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> About  </title>
+<link rel = "stylesheet" href ="style.css">
+
+
+<style>
+
+
+/* Images used */
+.img1 { background-image: url("leaves.jpg"); }
+.img2 { background-image: url("hustle.jpg"); }
+.img3 { background-image: url("books.jpg"); }
+.img4 { background-image: url("business.jpg"); }
+.img5 { background-image: url("stairs.jpg"); }
+.img6 { background-image: url("explore.jpg"); }
+
+
+</style>
+
+
+
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8896 </button>
+
+<span style="font-size:30px;cursor:pointer; color: white" onclick="openNav()">&#9776;</span>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Goals.html">Goals</a>
+ 
+  </div>
+</div>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+<div class="bg-image img5"></div>
+<div class="bg-image img6"></div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+<div id = "first" class="bg-text"> About </div>
+<div id = "second" class="bg-text">  I do not have any siblings but my cousin brothers and sisters are just like my siblings. I have travelled a lot in my life, be it in India or now outside of India. 
+I have an experience of living in both a nuclear and a joint family.</div>
+<div id = "third" class="bg-text"> While the experience of travelling with my parents and moving to new environments has taught me to adapt to situations, just as it is now helping to transition from the Indian education system to the American education system,
+ which are quite poles apart, our time as a nuclear family is helping me to be independent and hardworking.  </div>
+<div id = "fourth" class="bg-text"> However, while living in a joint family, with my uncles,aunts, grandpa, grandma and my cousin brothers and sisters, I learnt the skill of teamwork and communication to solve problems in a family or as a team. For instance, back in 2013, when my Grandpa was suffering from cancer, we all stood together and had the strength to face the situation. Every day we used to take time from our schedule and would go in turns to visit the 
+hospital and look after him and our parents financially worked together to pay the hospital bills </div>
+<div id = "fifth" class="bg-text"> We even had a house helper and I had a good friendship with him and that has taught me to respect each and every individual
+ irrespective of their financial or social status  </div>
+<div id = "sixth" class="bg-text"> Furthermore, I have my pets, which includes my dog, fishes and birds, who have taught me the values of humanity and
+empathy as pets, especially dogs, are so emotional that they understand you with times in life. </div>
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer>&copy; Copyright 2019 Sahil Raina </footer>
+</body>
+<footer>&copy; Copyright 2019 Sahil Raina </footer>
+</html>
